@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="welcome">
+        <audio src="./audio/gameStart.mp3" id="audioStart"></audio>
+        <div class="heading">
+            <p>Welcome to game board</p>
+        </div>
+        <main>
+            <div class="game" id="snake">
+                <h1>Snake Game</h1>
+                <div class="level">
+                    <div class="speed" id="easy">Easy</div>
+                    <div class="speed" id="medium">Medium</div>
+                    <div class="speed" id = "hard">Hard</div>
+                </div>
+            </div>
+            <div class="game" id="ping">Pingpong</div>
+        </main>
+    </div>
+
+    <div class="main-frame">
+        <audio src="./audio/gameBackground.mp3" id ="background" loop></audio>
+        <audio src="./audio/eating.mp3" id="feeding"></audio>
+        <audio src="./audio/wall_hit.mp3" id="wall_hit"></audio>
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+
+    <div class="endGame">
+        <audio src="./audio/gameOver.mp3" id="overSound" loop></audio>
+        <div class="msg"></div>
+        <div class="btn-group">
+            <button class="return" id="return">Return Menu</button>
+            <button class="restart" id="restart">Restart Game</button>
+        </div>
+    </div>
+
+</body>
+<script src="./snake.js"></script>
+
+</html>
